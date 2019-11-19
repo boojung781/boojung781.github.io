@@ -29,8 +29,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
 body {
 	line-height: 1;
+	background-image: url("bgphoto.jpg") ;
 }
 
 ol, ul {
@@ -701,7 +703,8 @@ input, select, textarea {
 		}
 
 			.image.main img {
-				width: 100%;
+				width: 60%;
+				margin: auto;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -1140,9 +1143,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1201,6 +1207,8 @@ input, select, textarea {
 		width: 100%;
 		padding: 4rem 2rem;
 		z-index: 3;
+		background-image: url("bgphoto.jpg") !important;
+		background-size: cover;
 	}
 
 		#wrapper:before {
@@ -1319,7 +1327,7 @@ input, select, textarea {
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
-			}
+				background-color: rgba(0, 0, 0, 0.5);			}
 
 				#header .content .inner > :last-child {
 					margin-bottom: 0;
@@ -1363,6 +1371,7 @@ input, select, textarea {
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
+					background-color: black;
 				}
 
 					#header nav ul li a:hover {
@@ -1656,3 +1665,4 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
